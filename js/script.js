@@ -1,3 +1,15 @@
+function openLinkedIn(event) {
+  event.preventDefault(); 
+  var linkedInAppUrl = "linkedin://profile/marcos-nicolas-gervacio-28536a198";
+  var linkedInWebUrl = "https://www.linkedin.com/in/marcos-nicolas-gervacio-28536a198";
+
+  window.location.href = linkedInAppUrl;
+
+  setTimeout(function() {
+      window.location.href = linkedInWebUrl; // Si la app no esta instalada, abre el sitio web
+  }, 1500);
+}
+
 // implementacion de emailJs. valida que no pueda haber campos vacios. alertas.
 const btn = document.getElementById('button');
 
