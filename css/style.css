@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden; /* Evita el desplazamiento lateral */
+  max-width: 100vw; /* Asegura que no se expanda más allá del ancho de la pantalla */
+}
+
 html{
   scroll-padding-top: 80px; 
 }
